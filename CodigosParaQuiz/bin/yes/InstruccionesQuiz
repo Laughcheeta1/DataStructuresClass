@@ -1,0 +1,11 @@
+A continuación, se tienen clases para un sistema que quiere automatizar la información de reciclaje en la ciudad. Se tiene una clase UnidadReciclaje donde se almacena los paquetes 
+que se reciclan. 
+Esta lista es de tipo PaqueteReciclaje, que es una clase que tiene: barrio donde se recogió, kg que pesó, si el paquete es aceptable o no 
+(esto es por si viene en muy malas condiciones que no se puede recuperar nada, se cataloga como no aceptable), los kgs malos, o sea, cuando se revisan los kgs del paquete hay una parte que puede estar 
+mal clasificada por error o que venga malo, estos kgs se pesan y se guardan en este parámetro. Y la clase tiene un método que calcula los que realmente están buenos restando estos malos del total. 
+Estos paquetes se clasifican según el tipo de reciclaje que son: Vidrio, Plástico o Cartón, y para cada uno de ellos hay una clase respectiva (PaqueteVidrio, PaquetePlastico y PaqueteCarton). 
+Para los de Vidrio se hace un cálculo de cuánto peso viene de vidrio Verde, Incoloro o Ambar. Y para los de plástico se tiene la cantidad de kgs de lo que es plástico duro y lo que es plástico blando.
+
+Complete todo el código. En cada clase ponga los atributos y métodos que crea convenientes para que puedan funcionar los métodos que se le piden a continuación. Tenga en cuenta que todos los paquetes de 
+Reciclaje son de Vidrio, de Plástico o de Cartón, no puede existir otro tipo de paquete. Implemente los constructors, fíjese en el orden de los parámetros en el main 
+(Busque en el main donde se declaran los objetos de las clases y vea el orden en que se pasan los parámetros). No puede cambiar el main.
