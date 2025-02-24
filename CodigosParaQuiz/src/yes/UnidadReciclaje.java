@@ -90,8 +90,8 @@ public class UnidadReciclaje {
     
     // Lista de kg buenos para cada uno de los barrios
     public double[] kgPorBarrios() {
+	// Recordar que los arreglos automaticamete se inician en todo ceros
         double[] respuesta = new double[barriosConPaquete.length];
-        respuesta = inicializarDouble(respuesta.length);
         
         int posicion;
         
@@ -136,18 +136,6 @@ public class UnidadReciclaje {
         }
         
         return respuesta;
-    }
-    
-    private double[] inicializarDouble(int tamano)
-    {
-        double[] d = new double[tamano];
-        
-        for (int i = 0; i < tamano; i++)
-        {
-            d[i] = 0;
-        }
-        
-        return d;
     }
     
     private int getPosicionBarriosConPaquete(String barrio)
